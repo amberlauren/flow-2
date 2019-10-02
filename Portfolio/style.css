@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+background-color: #baecff;
+}
+
+/* Menu Navigation */
+section{
+  margin-bottom: 80px;
+}
+
+
+
+.simple{
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  padding: 15px;
+}
+
+
+.simple a {
+  text-decoration: none;
+  color: black;
+}
+
+.simple nav a:hover {
+color: #4a62ff;
+}
+
+.simple nav {
+  display: flex;
+  width: 350px;
+  justify-content: space-around;
+}
+
+
+
+/*grid work*/
+.gridmother{
+  background-color: #baecff;
+  display: grid;
+  padding: 5px;
+
+grid-template-areas:
+    "art1         art1         project1     project1"
+    "art1         art1         project1     project1"
+    "project2     project2     project2     art2"
+    "project2     project2     project2     art2"
+    "Sneakpeak    Sneakpeak    Sneakpeak    Sneakpeak";
+
+    grid-gap: 3px;
+
+}
+
+.gridkids{
+  background-color: #91f2aa;
+  font-family: helvetica, arial,sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding: 5px;
+}
+.gridkids a{
+  text-decoration: none;
+  color: black;
+}
+
+.gridkids a:hover{
+  color: white;
+}
+
+.one{
+  grid-area: art1;
+}
+
+.two{
+  grid-area: project1;
+}
+
+.two img{
+  position: relative;
+  width: 300px;
+  height: 200px;
+}
+
+.three{
+  grid-area: art2;
+  height: 200px;;
+}
+
+.four{
+  grid-area: project2;
+}
+
+
+.five{
+  grid-area: Sneakpeak;
+  height: 150px;
+}
